@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Spring Boot 4.0 test package paths (org.springframework.boot.webmvc.test.autoconfigure)
 
-## [0.0.1] - 2026-11-01
+## [0.0.1] - 2026-11-10
 
 ### Added
 - Initial project setup (Spring Boot 4.0.9, Java 21, MyBatis, H2)
