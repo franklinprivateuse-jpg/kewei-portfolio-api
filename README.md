@@ -134,9 +134,8 @@ TBD
 
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 0.0.1 | 2026-11 | Initial setup, requirements docs |
+Version history follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
+See [`CHANGELOG.md`](CHANGELOG.md) for the full changelog.
 
 ## Future Improvements
 
