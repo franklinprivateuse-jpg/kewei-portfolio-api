@@ -16,3 +16,16 @@ spring:
   sql:
     init:
       mode: always
+
+# MyBatis - auto map snake_case columns to camelCase fields
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+# Admin token for owner-only endpoints
+admin:
+  token: portfolio-admin-2026
+
+# CORS - allow frontend dev server
+cors:
+  allowed-origin: http://localhost:5173
