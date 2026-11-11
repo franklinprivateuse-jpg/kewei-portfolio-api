@@ -24,7 +24,7 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(MockitoExtension.class)
 class AdminTokenFilterTest {
 
-    private static final String VALID_TOKEN = "portfolio-admin-2026";
+    private static final String VALID_TOKEN = "123456";
     private static final String ADMIN_HEADER = "X-Admin-Token";
 
     @Mock

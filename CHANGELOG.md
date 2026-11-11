@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Blog posts CRUD API (FR5): `GET /posts`, `GET /posts/{id}`, `POST /posts`, `PUT /posts/{id}`, `DELETE /posts/{id}`
+- Post entity, PostRequest/PostVO/PostDetailVO DTOs with validation (title <= 200, excerpt <= 500, date yyyy-MM-dd)
+- NotFoundException and 404 handler in GlobalExceptionHandler for missing resources
+- PostMapper, PostService, PostServiceImpl following the existing three-layer architecture
+- PostMapperTest (10 tests), PostServiceTest (9 tests), PostControllerTest (10 tests) — total 57 tests passing
+
 ## [0.0.2] - 2026-11-11
 
 ### Added

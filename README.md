@@ -136,6 +136,7 @@ TBD
 
 Version history follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
 See [`CHANGELOG.md`](CHANGELOG.md) for the full changelog.
+Standards: [Changelog Standards](requirements/Non-functional%20requirements/changelog-standards.md)
 
 ## Future Improvements
 

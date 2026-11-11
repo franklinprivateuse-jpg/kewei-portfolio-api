@@ -24,7 +24,7 @@ mybatis:
 
 # Admin token for owner-only endpoints
 admin:
-  token: portfolio-admin-2026
+  token: 123456
 
 # CORS - allow frontend dev server
 cors:

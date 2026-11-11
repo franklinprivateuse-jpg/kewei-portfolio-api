@@ -57,6 +57,12 @@ public class GlobalExceptionHandler {
         return build(HttpStatus.BAD_REQUEST, "Invalid parameter type: " + ex.getName());
     }
 
+    /** Resource not found (e.g. post id does not exist) */
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleNotFound(NotFoundException ex) {
+        return build(HttpStatus.NOT_FOUND, ex.getMessage());
+    }
+
     /**
      * Catch-all for unexpected errors.
      * Logs the full stack trace for debugging; returns a generic message
