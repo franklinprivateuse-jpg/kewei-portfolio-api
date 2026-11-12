@@ -28,8 +28,8 @@ public class SecurityConfig {
     @Value("${admin.token}")
     private String adminToken;
 
-    @Value("${cors.allowed-origin}")
-    private String allowedOrigin;
+    @Value("${cors.allowed-origins}")
+    private List<String> allowedOrigins;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -56,8 +56,8 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        // Only allow the configured frontend origin, not any domain
-        config.setAllowedOrigins(List.of(allowedOrigin));
+        // Only allow the configured frontend origins, not any domain
+        config.setAllowedOrigins(allowedOrigins);
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         // Allow all headers (need X-Admin-Token and other custom headers)
         config.setAllowedHeaders(List.of("*"));

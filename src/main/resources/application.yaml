@@ -26,6 +26,6 @@ mybatis:
 admin:
   token: 123456
 
-# CORS - allow frontend dev server
+# CORS - allow frontend dev server and GitHub Pages (comma-separated)
 cors:
-  allowed-origin: http://localhost:5173
+  allowed-origins: http://localhost:5173,https://franklinprivateuse-jpg.github.io
