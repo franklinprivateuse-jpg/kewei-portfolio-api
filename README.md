@@ -98,7 +98,11 @@ Standards: [Unit Testing Strategy](requirements/Non-functional%20requirements/un
 
 ## CI/CD Pipeline
 
-TBD
+This repository uses a GitHub Actions workflow for continuous integration (`.github/workflows/ci.yml`):
+
+- **Trigger**: every push and pull request to the `main` branch
+- **Steps**: checkout → set up Java 21 (Temurin) with Maven cache → `./mvnw verify --batch-mode` (compile + run all 57 unit tests) → upload the built JAR as a workflow artifact
+- A passing CI run guarantees the API compiles and all tests pass before code is merged
 
 ## Deployment
 

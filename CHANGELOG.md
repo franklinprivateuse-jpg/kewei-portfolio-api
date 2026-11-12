@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- GitHub Actions CI workflow (`.github/workflows/ci.yml`) — runs `./mvnw verify` (compile + all unit tests) on every push/PR to `main`, uploads the built JAR as a workflow artifact
 - Blog posts CRUD API (FR5): `GET /posts`, `GET /posts/{id}`, `POST /posts`, `PUT /posts/{id}`, `DELETE /posts/{id}`
 - Post entity, PostRequest/PostVO/PostDetailVO DTOs with validation (title <= 200, excerpt <= 500, date yyyy-MM-dd)
 - NotFoundException and 404 handler in GlobalExceptionHandler for missing resources
