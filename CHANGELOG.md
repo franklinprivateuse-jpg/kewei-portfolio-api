@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2026-11-12
+
 ### Added
 - GitHub Actions CI workflow (`.github/workflows/ci.yml`) — runs `./mvnw verify` (compile + all unit tests) on every push/PR to `main`, uploads the built JAR as a workflow artifact
 - Blog posts CRUD API (FR5): `GET /posts`, `GET /posts/{id}`, `POST /posts`, `PUT /posts/{id}`, `DELETE /posts/{id}`
